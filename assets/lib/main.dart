@@ -1285,7 +1285,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin{
                                     width: 150,
                                     child: TextFormField(
                                       decoration: InputDecoration(
-                                          hintText: 'Add',
+                                          hintText: 'Top/Bottom',
                                           hintStyle:
                                           const TextStyle(color: Colors.black87),
                                         focusedBorder: OutlineInputBorder(

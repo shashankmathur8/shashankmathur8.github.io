@@ -3,11 +3,11 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"flutter_bootstrap.js": "b6245aa7b45bb853d126938505cec14f",
+const RESOURCES = {"flutter_bootstrap.js": "3e9f142a11fbe3fcaa6659b4c69843dc",
 "version.json": "bdad747af4b5cbf2d7d97f99cbbb4790",
 "index.html": "f4a75529bda0ab60c7e916022fff60c5",
 "/": "f4a75529bda0ab60c7e916022fff60c5",
-"main.dart.js": "140ee6e03446bf1f83856b300b115e4d",
+"main.dart.js": "9c5d07af8ec97673566b9fb2be6d89ba",
 "flutter.js": "383e55f7f3cce5be08fcf1f3881f585c",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
@@ -23,7 +23,7 @@ const RESOURCES = {"flutter_bootstrap.js": "b6245aa7b45bb853d126938505cec14f",
 "assets/shaders/ink_sparkle.frag": "ecc85a2e95f5e9f53123dcaf8cb9b6ce",
 "assets/lib/MongoDB_White.png": "caed849d3c570f9137041a75182cd446",
 "assets/lib/toggleBUtton.dart": "d5c1931e250379bbfd8b5133163e4af8",
-"assets/lib/main.dart": "b0d649478623cbce4712d58f3d8b9c86",
+"assets/lib/main.dart": "d7971810effefec4677a1605e695e4c7",
 "assets/AssetManifest.bin": "30b68596976eade9a7bf2676eeced35e",
 "assets/fonts/MaterialIcons-Regular.otf": "daf6fb1eb37c262db982c7ee4fb1723f",
 "canvaskit/skwasm.js": "5d4f9263ec93efeb022bb14a3881d240",
