@@ -153,7 +153,6 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin{
             minOpacity: 0.1,
             spawnOpacity: 0.4,
             baseColor: colorLightGreen,
-            image: Image(image: AssetImage('assets/Images/Flutter.png')),
           ),
         ),
         vsync: this,
@@ -973,7 +972,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin{
                                       items: items,
                                       controller: controller3,
                                       enabled: true,
-                                      singleSelect: false,
+                                      singleSelect: true,
                                       searchEnabled: false,
                                       chipDecoration: ChipDecoration(
                                         backgroundColor: Color.fromRGBO(228, 252, 247, 1),
@@ -1051,7 +1050,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin{
                                       items: items,
                                       controller: controller4,
                                       enabled: true,
-                                      singleSelect: false,
+                                      singleSelect: true,
                                       searchEnabled: false,
                                       chipDecoration: ChipDecoration(
                                         backgroundColor:
@@ -1130,7 +1129,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin{
                                       items: items,
                                       controller: controller5,
                                       enabled: true,
-                                      singleSelect: false,
+                                      singleSelect: true,
                                       searchEnabled: false,
                                       chipDecoration: ChipDecoration(
                                         backgroundColor:
@@ -1284,57 +1283,25 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin{
                                   ),
                                   SizedBox(
                                     width: 150,
-                                    child: MultiDropdown<User>(
-                                      items: items,
-                                      controller: controller7,
-                                      enabled: true,
-                                      singleSelect: false,
-                                      searchEnabled: false,
-                                      chipDecoration: ChipDecoration(
-                                        backgroundColor:
-                                            Color.fromRGBO(228, 252, 247, 1),
-                                        wrap: true,
-                                        runSpacing: 2,
-                                        spacing: 10,
-                                      ),
-                                      fieldDecoration: FieldDecoration(
-                                        hintText: 'Add',
-                                        hintStyle:
-                                            const TextStyle(color: Colors.black87),
-                                        showClearIcon: false,
-                                        border: OutlineInputBorder(
-                                          borderRadius: BorderRadius.circular(12),
-                                          borderSide:
-                                              const BorderSide(color: Colors.grey),
-                                        ),
+                                    child: TextFormField(
+                                      decoration: InputDecoration(
+                                          hintText: 'Add',
+                                          hintStyle:
+                                          const TextStyle(color: Colors.black87),
                                         focusedBorder: OutlineInputBorder(
                                           borderRadius: BorderRadius.circular(12),
                                           borderSide: const BorderSide(
-                                            color: Colors.black87,
+                                            width: 3,
+                                            color:
+                                            Color.fromRGBO(13, 162, 255, 1),
                                           ),
                                         ),
+                                        border: OutlineInputBorder(
+                                          borderRadius: BorderRadius.circular(12),
+                                          borderSide:
+                                          const BorderSide(color: Colors.grey),
+                                        ),
                                       ),
-                                      dropdownDecoration: const DropdownDecoration(
-                                        marginTop: 2,
-                                        maxHeight: 500,
-                                      ),
-                                      dropdownItemDecoration:
-                                          DropdownItemDecoration(
-                                        selectedIcon: const Icon(Icons.check_box,
-                                            color: Colors.green),
-                                        disabledIcon: Icon(Icons.lock,
-                                            color: Colors.grey.shade300),
-                                      ),
-                                      validator: (value) {
-                                        if (value == null || value.isEmpty) {
-                                          return 'Please select a country';
-                                        }
-                                        return null;
-                                      },
-                                      onSelectionChange: (selectedItems) {
-                                        debugPrint(
-                                            "OnSelectionChange: $selectedItems");
-                                      },
                                     ),
                                   ),
                                 ],
